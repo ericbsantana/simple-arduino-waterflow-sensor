@@ -1,8 +1,11 @@
 # Simple Arduino Water Flow Sensor Example
-The code measures the water flow in L/min (but you can also measure it on mL/s)
+The code measures the water flow in L/min (but you can also measure it on mL/s).
+
+##About
+Code tested with YF-S201 Water Flow Sensor (operating voltage is 5-18V) on a Arduino UNO.
 
 ##Usage
-You are free to use this code on your water flow checker but you may want change the interrupt pin:
+You may want change the interrupt pin:
 ```cpp
 int signalPin = 2;
 ```
@@ -15,4 +18,7 @@ to:
 ```cpp
 flow = (rpm / 5.5) / (1000/60);
 ```
+
+##Contribute
+Feel free to suggest changes on the code.
 
